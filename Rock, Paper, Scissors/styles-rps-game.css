@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-green: #448D76;
+  --dark-green: #093426;
+  --white: #ffffff;
+  --dark-pink: #AE0F7B;
+  --light-pink: #F269C7;
+}
+
+body {
+  background-color: var(--light-green);
+  text-align: center;
+  color: var(--white);
+}
+
+h1 {
+    font-size: 45px;
+  margin: 50px 0 50px;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 10px 0px;
+}
+
+h1, h2 {
+    font-family: Helvetica, sans-serif;
+    color: #FCBA12;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  color: var(--dark-green);
+  background-color: var(--light-pink);
+  background-image: linear-gradient(#F7A1DC, #F269C7);
+  border-color: var(--light-pink);
+  border-width: 3px;
+  padding: 2px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#f78ed6, #f84cc1);
+}
+
+.rules-container {
+  padding: 10px;
+  margin: auto;
+  border-radius: 15px;
+  border: 5px solid var(--dark-pink);
+  background-color: var(--white);
+  color: var(--dark-green);
+}
+
+.rules-container ul {
+  list-style-type: none;
+}
+
+.rules-container p {
+  margin: 10px 0;
+}
+
+.btn-container {
+    margin: 20px;
+}
+
+.rock {
+    width: 40%;
+}
+
+@media (min-width: 760px) {
+  .rules-container {
+    width: 45%;
+  }
+}
+@media (max-width: 760px) {
+    .rules-container {
+        margin: 0px 15px;
+    }
+}
+.score-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0;
+  font-size: 1.2rem;
+}
+
+.score {
+  font-weight: 500;
+}
+
+.results-container {
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+#winner-msg {
+  margin-top: 25px;
+}
+
+#reset-game-btn {
+  display: none;
+  margin: 20px auto;
+  padding: 2px;
+}
